@@ -25,7 +25,7 @@ impl Iomux {
         self,
         n: usize,
     ) -> crate::common::Reg<regs::Pincm, crate::common::RW> {
-        assert!(n < 108usize);
+        assert!(n < 117usize);
         unsafe {
             crate::common::Reg::from_ptr(
                 self.ptr.wrapping_add(0x0usize + n * 4usize) as _,

@@ -1,14 +1,19 @@
 {
   "name": "am13e23018",
   "family": "am13e230x",
-  "datasheet_url": "https://www.ti.com/product/AM13E23019",
-  "reference_manual_url": "https://www.ti.com/product/AM13E23019#tech-docs",
+  "datasheet_url": "https://www.ti.com/lit/gpn/am13e23019",
+  "reference_manual_url": "https://www.ti.com/lit/pdf/sprujf2",
   "errata_url": "https://www.ti.com/product/AM13E23019#tech-docs",
   "memory": [
     {
       "name": "FLASH",
-      "length": 256,
+      "length": 128,
       "address": 0
+    },
+    {
+      "name": "FLASH_BANK1",
+      "length": 128,
+      "address": 262144
     },
     {
       "name": "RAM",
@@ -5279,7 +5284,7 @@
     "IOMUX": {
       "name": "IOMUX",
       "type": "Iomux",
-      "version": "am13e230x",
+      "version": "am13",
       "address": 1074577408,
       "power_domain": "Pd1",
       "pins": []

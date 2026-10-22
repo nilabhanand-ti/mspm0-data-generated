@@ -1,8 +1,8 @@
 {
   "name": "am13e23019",
   "family": "am13e230x",
-  "datasheet_url": "https://www.ti.com/product/AM13E23019",
-  "reference_manual_url": "https://www.ti.com/product/AM13E23019#tech-docs",
+  "datasheet_url": "https://www.ti.com/lit/gpn/am13e23019",
+  "reference_manual_url": "https://www.ti.com/lit/pdf/sprujf2",
   "errata_url": "https://www.ti.com/product/AM13E23019#tech-docs",
   "memory": [
     {
@@ -5279,7 +5279,7 @@
     "IOMUX": {
       "name": "IOMUX",
       "type": "Iomux",
-      "version": "am13e230x",
+      "version": "am13",
       "address": 1074577408,
       "power_domain": "Pd1",
       "pins": []

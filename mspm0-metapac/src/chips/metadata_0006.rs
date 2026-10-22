@@ -431,7 +431,7 @@ pub(crate) static PERIPHERALS: &[Peripheral] = &[
     Peripheral {
         name: "IOMUX",
         kind: "iomux",
-        version: Some("am13e230x"),
+        version: Some("am13"),
         pins: &[],
         power_domain: PowerDomain::Pd1,
         sys_fentries: None,

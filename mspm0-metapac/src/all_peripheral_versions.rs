@@ -9,13 +9,14 @@ pub static ALL_PERIPHERAL_VERSIONS: &[(&str, &[&str])] = &[
     ("flashctl", &["v1"]),
     ("gpio", &["v1"]),
     ("i2c", &["v1"]),
-    ("iomux", &["am13e230x", "v1"]),
+    ("iomux", &["am13", "v1"]),
     ("mathacl", &["v1"]),
     ("opa", &["v1"]),
     (
         "sysctl",
         &[
             "am13e230x",
+            "am13e232x",
             "c110x",
             "g350x_g310x_g150x_g110x",
             "g351x_g151x",

@@ -186,7 +186,7 @@ pub use Interrupt as interrupt;
 pub mod dma;
 #[path = "../../peripherals/gpio_v1.rs"]
 pub mod gpio;
-#[path = "../../peripherals/iomux_am13e230x.rs"]
+#[path = "../../peripherals/iomux_am13.rs"]
 pub mod iomux;
 #[path = "../../peripherals/sysctl_am13e230x.rs"]
 pub mod sysctl;
