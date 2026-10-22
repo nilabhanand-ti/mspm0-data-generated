@@ -4,17 +4,18 @@ pub static ALL_PERIPHERAL_VERSIONS: &[(&str, &[&str])] = &[
     ("aesadv", &["v1"]),
     ("canfd", &["v1"]),
     ("cpuss", &["v1"]),
-    ("dma", &["v1"]),
+    ("dma", &["v1", "v2"]),
     ("factoryregion", &["v1"]),
     ("flashctl", &["v1"]),
     ("gpio", &["v1"]),
     ("i2c", &["v1"]),
-    ("iomux", &["v1"]),
+    ("iomux", &["am13e230x", "v1"]),
     ("mathacl", &["v1"]),
     ("opa", &["v1"]),
     (
         "sysctl",
         &[
+            "am13e230x",
             "c110x",
             "g350x_g310x_g150x_g110x",
             "g351x_g151x",
@@ -26,5 +27,7 @@ pub static ALL_PERIPHERAL_VERSIONS: &[(&str, &[&str])] = &[
     ("tim", &["v1"]),
     ("trng", &["v1"]),
     ("uart", &["v1"]),
+    ("unicomm", &["v1"]),
+    ("unicommuart", &["v1"]),
     ("wwdt", &["v1"]),
 ];
