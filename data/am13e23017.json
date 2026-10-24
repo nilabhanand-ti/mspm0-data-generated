@@ -4276,21 +4276,476 @@
     "ADC0": {
       "name": "ADC0",
       "type": "Adc",
+      "version": "am13",
       "address": 1073741824,
+      "power_domain": "Pd1",
+      "pins": [
+        {
+          "pin": "PA0",
+          "signal": "1",
+          "pf": 0
+        },
+        {
+          "pin": "PA1",
+          "signal": "2",
+          "pf": 0
+        },
+        {
+          "pin": "PA2",
+          "signal": "3",
+          "pf": 0
+        },
+        {
+          "pin": "PA3",
+          "signal": "4",
+          "pf": 0
+        },
+        {
+          "pin": "PA30",
+          "signal": "5",
+          "pf": 0
+        },
+        {
+          "pin": "PB0",
+          "signal": "6",
+          "pf": 0
+        },
+        {
+          "pin": "PB1",
+          "signal": "7",
+          "pf": 0
+        },
+        {
+          "pin": "PB2",
+          "signal": "8",
+          "pf": 0
+        },
+        {
+          "pin": "PB3",
+          "signal": "9",
+          "pf": 0
+        },
+        {
+          "pin": "PC16",
+          "signal": "10",
+          "pf": 0
+        },
+        {
+          "pin": "PA28",
+          "signal": "11",
+          "pf": 0
+        },
+        {
+          "pin": "PA17",
+          "signal": "12",
+          "pf": 0
+        },
+        {
+          "pin": "PA27",
+          "signal": "14",
+          "pf": 0
+        },
+        {
+          "pin": "PA16",
+          "signal": "15",
+          "pf": 0
+        },
+        {
+          "pin": "PC10",
+          "signal": "16",
+          "pf": 0
+        },
+        {
+          "pin": "PA6",
+          "signal": "17",
+          "pf": 0
+        },
+        {
+          "pin": "PC14",
+          "signal": "18",
+          "pf": 0
+        },
+        {
+          "pin": "PC15",
+          "signal": "19",
+          "pf": 0
+        },
+        {
+          "pin": "PB24",
+          "signal": "21",
+          "pf": 0
+        },
+        {
+          "pin": "PB25",
+          "signal": "22",
+          "pf": 0
+        },
+        {
+          "pin": "PC8",
+          "signal": "23",
+          "pf": 0
+        },
+        {
+          "pin": "PC11",
+          "signal": "24",
+          "pf": 0
+        },
+        {
+          "pin": "PC12",
+          "signal": "25",
+          "pf": 0
+        },
+        {
+          "pin": "PB26",
+          "signal": "26",
+          "pf": 0
+        },
+        {
+          "pin": "PB27",
+          "signal": "27",
+          "pf": 0
+        },
+        {
+          "pin": "PB28",
+          "signal": "28",
+          "pf": 0
+        },
+        {
+          "pin": "PB29",
+          "signal": "29",
+          "pf": 0
+        },
+        {
+          "pin": "PB30",
+          "signal": "30",
+          "pf": 0
+        }
+      ]
+    },
+    "ADC0RESULT": {
+      "name": "ADC0RESULT",
+      "type": "AdcResult",
+      "version": "am13",
+      "address": 1073782784,
       "power_domain": "Pd1",
       "pins": []
     },
     "ADC1": {
       "name": "ADC1",
       "type": "Adc",
+      "version": "am13",
       "address": 1073750016,
+      "power_domain": "Pd1",
+      "pins": [
+        {
+          "pin": "PA0",
+          "signal": "1",
+          "pf": 0
+        },
+        {
+          "pin": "PA1",
+          "signal": "2",
+          "pf": 0
+        },
+        {
+          "pin": "PA6",
+          "signal": "3",
+          "pf": 0
+        },
+        {
+          "pin": "PA7",
+          "signal": "4",
+          "pf": 0
+        },
+        {
+          "pin": "PB4",
+          "signal": "5",
+          "pf": 0
+        },
+        {
+          "pin": "PB0",
+          "signal": "6",
+          "pf": 0
+        },
+        {
+          "pin": "PB1",
+          "signal": "7",
+          "pf": 0
+        },
+        {
+          "pin": "PB2",
+          "signal": "8",
+          "pf": 0
+        },
+        {
+          "pin": "PB3",
+          "signal": "9",
+          "pf": 0
+        },
+        {
+          "pin": "PC17",
+          "signal": "10",
+          "pf": 0
+        },
+        {
+          "pin": "PB5",
+          "signal": "11",
+          "pf": 0
+        },
+        {
+          "pin": "PA18",
+          "signal": "12",
+          "pf": 0
+        },
+        {
+          "pin": "PA5",
+          "signal": "13",
+          "pf": 0
+        },
+        {
+          "pin": "PA27",
+          "signal": "14",
+          "pf": 0
+        },
+        {
+          "pin": "PA31",
+          "signal": "15",
+          "pf": 0
+        },
+        {
+          "pin": "PC10",
+          "signal": "16",
+          "pf": 0
+        },
+        {
+          "pin": "PA4",
+          "signal": "17",
+          "pf": 0
+        },
+        {
+          "pin": "PA8",
+          "signal": "18",
+          "pf": 0
+        },
+        {
+          "pin": "PA9",
+          "signal": "19",
+          "pf": 0
+        },
+        {
+          "pin": "PB24",
+          "signal": "21",
+          "pf": 0
+        },
+        {
+          "pin": "PB25",
+          "signal": "22",
+          "pf": 0
+        },
+        {
+          "pin": "PC8",
+          "signal": "23",
+          "pf": 0
+        },
+        {
+          "pin": "PC11",
+          "signal": "24",
+          "pf": 0
+        },
+        {
+          "pin": "PC12",
+          "signal": "25",
+          "pf": 0
+        },
+        {
+          "pin": "PB26",
+          "signal": "26",
+          "pf": 0
+        },
+        {
+          "pin": "PB27",
+          "signal": "27",
+          "pf": 0
+        },
+        {
+          "pin": "PB28",
+          "signal": "28",
+          "pf": 0
+        },
+        {
+          "pin": "PB29",
+          "signal": "29",
+          "pf": 0
+        },
+        {
+          "pin": "PB30",
+          "signal": "30",
+          "pf": 0
+        }
+      ]
+    },
+    "ADC1RESULT": {
+      "name": "ADC1RESULT",
+      "type": "AdcResult",
+      "version": "am13",
+      "address": 1073786880,
       "power_domain": "Pd1",
       "pins": []
     },
     "ADC2": {
       "name": "ADC2",
       "type": "Adc",
+      "version": "am13",
       "address": 1073758208,
+      "power_domain": "Pd1",
+      "pins": [
+        {
+          "pin": "PA17",
+          "signal": "1",
+          "pf": 0
+        },
+        {
+          "pin": "PC9",
+          "signal": "2",
+          "pf": 0
+        },
+        {
+          "pin": "PC13",
+          "signal": "3",
+          "pf": 0
+        },
+        {
+          "pin": "PC7",
+          "signal": "4",
+          "pf": 0
+        },
+        {
+          "pin": "PA29",
+          "signal": "5",
+          "pf": 0
+        },
+        {
+          "pin": "PC8",
+          "signal": "6",
+          "pf": 0
+        },
+        {
+          "pin": "PB26",
+          "signal": "7",
+          "pf": 0
+        },
+        {
+          "pin": "PB27",
+          "signal": "8",
+          "pf": 0
+        },
+        {
+          "pin": "PB28",
+          "signal": "9",
+          "pf": 0
+        },
+        {
+          "pin": "PB29",
+          "signal": "10",
+          "pf": 0
+        },
+        {
+          "pin": "PB30",
+          "signal": "11",
+          "pf": 0
+        },
+        {
+          "pin": "PA16",
+          "signal": "12",
+          "pf": 0
+        },
+        {
+          "pin": "PC10",
+          "signal": "14",
+          "pf": 0
+        },
+        {
+          "pin": "PC11",
+          "signal": "15",
+          "pf": 0
+        },
+        {
+          "pin": "PC12",
+          "signal": "16",
+          "pf": 0
+        },
+        {
+          "pin": "PA26",
+          "signal": "17",
+          "pf": 0
+        },
+        {
+          "pin": "PA4",
+          "signal": "18",
+          "pf": 0
+        },
+        {
+          "pin": "PA5",
+          "signal": "19",
+          "pf": 0
+        },
+        {
+          "pin": "PA3",
+          "signal": "21",
+          "pf": 0
+        },
+        {
+          "pin": "PA7",
+          "signal": "22",
+          "pf": 0
+        },
+        {
+          "pin": "PB4",
+          "signal": "23",
+          "pf": 0
+        },
+        {
+          "pin": "PB5",
+          "signal": "24",
+          "pf": 0
+        },
+        {
+          "pin": "PA2",
+          "signal": "25",
+          "pf": 0
+        },
+        {
+          "pin": "PA6",
+          "signal": "26",
+          "pf": 0
+        },
+        {
+          "pin": "PA30",
+          "signal": "27",
+          "pf": 0
+        },
+        {
+          "pin": "PA31",
+          "signal": "28",
+          "pf": 0
+        },
+        {
+          "pin": "PB31",
+          "signal": "29",
+          "pf": 0
+        },
+        {
+          "pin": "PA28",
+          "signal": "30",
+          "pf": 0
+        }
+      ]
+    },
+    "ADC2RESULT": {
+      "name": "ADC2RESULT",
+      "type": "AdcResult",
+      "version": "am13",
+      "address": 1073790976,
       "power_domain": "Pd1",
       "pins": []
     },
@@ -9101,6 +9556,7 @@
     "UC0_I2CC": {
       "name": "UC0_I2CC",
       "type": "UnicommI2cc",
+      "version": "v1",
       "address": 1080066048,
       "power_domain": "Pd1",
       "pins": []
@@ -9115,6 +9571,7 @@
     "UC0_SPI": {
       "name": "UC0_SPI",
       "type": "UnicommSpi",
+      "version": "v1",
       "address": 1080131584,
       "power_domain": "Pd1",
       "pins": []
@@ -9639,6 +10096,7 @@
     "UC1_I2CC": {
       "name": "UC1_I2CC",
       "type": "UnicommI2cc",
+      "version": "v1",
       "address": 1080070144,
       "power_domain": "Pd1",
       "pins": []
@@ -9653,6 +10111,7 @@
     "UC1_SPI": {
       "name": "UC1_SPI",
       "type": "UnicommSpi",
+      "version": "v1",
       "address": 1080135680,
       "power_domain": "Pd1",
       "pins": []
@@ -10077,6 +10536,7 @@
     "UC2_I2CC": {
       "name": "UC2_I2CC",
       "type": "UnicommI2cc",
+      "version": "v1",
       "address": 1080074240,
       "power_domain": "Pd1",
       "pins": []
@@ -11058,6 +11518,7 @@
     "UC3_I2CC": {
       "name": "UC3_I2CC",
       "type": "UnicommI2cc",
+      "version": "v1",
       "address": 1080328192,
       "power_domain": "Pd1",
       "pins": []
@@ -11072,6 +11533,7 @@
     "UC3_SPI": {
       "name": "UC3_SPI",
       "type": "UnicommSpi",
+      "version": "v1",
       "address": 1080393728,
       "power_domain": "Pd1",
       "pins": []
@@ -11461,6 +11923,7 @@
     "UC4_I2CC": {
       "name": "UC4_I2CC",
       "type": "UnicommI2cc",
+      "version": "v1",
       "address": 1080332288,
       "power_domain": "Pd1",
       "pins": []
@@ -11475,6 +11938,7 @@
     "UC4_SPI": {
       "name": "UC4_SPI",
       "type": "UnicommSpi",
+      "version": "v1",
       "address": 1080397824,
       "power_domain": "Pd1",
       "pins": []
@@ -11909,6 +12373,7 @@
     "UC5_I2CC": {
       "name": "UC5_I2CC",
       "type": "UnicommI2cc",
+      "version": "v1",
       "address": 1080336384,
       "power_domain": "Pd1",
       "pins": []

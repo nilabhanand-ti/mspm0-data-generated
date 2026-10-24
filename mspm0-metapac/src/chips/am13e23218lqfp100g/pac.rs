@@ -258,6 +258,10 @@ mod _vectors {
 pub use cortex_m_rt::interrupt;
 #[cfg(feature = "rt")]
 pub use Interrupt as interrupt;
+#[path = "../../peripherals/adc_am13.rs"]
+pub mod adc;
+#[path = "../../peripherals/adcresult_am13.rs"]
+pub mod adcresult;
 #[path = "../../peripherals/dma_v2.rs"]
 pub mod dma;
 #[path = "../../peripherals/gpio_v1.rs"]
@@ -270,16 +274,26 @@ pub mod sysctl;
 pub mod tim;
 #[path = "../../peripherals/unicomm_v1.rs"]
 pub mod unicomm;
+#[path = "../../peripherals/unicommi2cc_v1.rs"]
+pub mod unicommi2cc;
+#[path = "../../peripherals/unicommspi_v1.rs"]
+pub mod unicommspi;
 #[path = "../../peripherals/unicommuart_v1.rs"]
 pub mod unicommuart;
 #[path = "../../peripherals/wwdt_v1.rs"]
 pub mod wwdt;
-///Address: 1073741824
-pub const ADC0: () = ();
-///Address: 1073750016
-pub const ADC1: () = ();
-///Address: 1073758208
-pub const ADC2: () = ();
+pub const ADC0: adc::Adc = unsafe { adc::Adc::from_ptr(1073741824 as *mut _) };
+pub const ADC0RESULT: adcresult::Adcresult = unsafe {
+    adcresult::Adcresult::from_ptr(1073782784 as *mut _)
+};
+pub const ADC1: adc::Adc = unsafe { adc::Adc::from_ptr(1073750016 as *mut _) };
+pub const ADC1RESULT: adcresult::Adcresult = unsafe {
+    adcresult::Adcresult::from_ptr(1073786880 as *mut _)
+};
+pub const ADC2: adc::Adc = unsafe { adc::Adc::from_ptr(1073758208 as *mut _) };
+pub const ADC2RESULT: adcresult::Adcresult = unsafe {
+    adcresult::Adcresult::from_ptr(1073790976 as *mut _)
+};
 ///Address: 1075511296
 pub const AES: () = ();
 ///Address: 1078329344
@@ -382,32 +396,37 @@ pub const TINIE: () = ();
 pub const UC0: unicomm::Unicomm = unsafe {
     unicomm::Unicomm::from_ptr(1080229888 as *mut _)
 };
-///Address: 1080066048
-pub const UC0_I2CC: () = ();
+pub const UC0_I2CC: unicommi2cc::Unicommi2cc = unsafe {
+    unicommi2cc::Unicommi2cc::from_ptr(1080066048 as *mut _)
+};
 ///Address: 1080098816
 pub const UC0_I2CT: () = ();
-///Address: 1080131584
-pub const UC0_SPI: () = ();
+pub const UC0_SPI: unicommspi::Unicommspi = unsafe {
+    unicommspi::Unicommspi::from_ptr(1080131584 as *mut _)
+};
 pub const UC0_UART: unicommuart::Unicommuart = unsafe {
     unicommuart::Unicommuart::from_ptr(1080033280 as *mut _)
 };
 pub const UC1: unicomm::Unicomm = unsafe {
     unicomm::Unicomm::from_ptr(1080238080 as *mut _)
 };
-///Address: 1080070144
-pub const UC1_I2CC: () = ();
+pub const UC1_I2CC: unicommi2cc::Unicommi2cc = unsafe {
+    unicommi2cc::Unicommi2cc::from_ptr(1080070144 as *mut _)
+};
 ///Address: 1080102912
 pub const UC1_I2CT: () = ();
-///Address: 1080135680
-pub const UC1_SPI: () = ();
+pub const UC1_SPI: unicommspi::Unicommspi = unsafe {
+    unicommspi::Unicommspi::from_ptr(1080135680 as *mut _)
+};
 pub const UC1_UART: unicommuart::Unicommuart = unsafe {
     unicommuart::Unicommuart::from_ptr(1080037376 as *mut _)
 };
 pub const UC2: unicomm::Unicomm = unsafe {
     unicomm::Unicomm::from_ptr(1080246272 as *mut _)
 };
-///Address: 1080074240
-pub const UC2_I2CC: () = ();
+pub const UC2_I2CC: unicommi2cc::Unicommi2cc = unsafe {
+    unicommi2cc::Unicommi2cc::from_ptr(1080074240 as *mut _)
+};
 ///Address: 1080107008
 pub const UC2_I2CT: () = ();
 pub const UC2_UART: unicommuart::Unicommuart = unsafe {
@@ -416,32 +435,37 @@ pub const UC2_UART: unicommuart::Unicommuart = unsafe {
 pub const UC3: unicomm::Unicomm = unsafe {
     unicomm::Unicomm::from_ptr(1080492032 as *mut _)
 };
-///Address: 1080328192
-pub const UC3_I2CC: () = ();
+pub const UC3_I2CC: unicommi2cc::Unicommi2cc = unsafe {
+    unicommi2cc::Unicommi2cc::from_ptr(1080328192 as *mut _)
+};
 ///Address: 1080360960
 pub const UC3_I2CT: () = ();
-///Address: 1080393728
-pub const UC3_SPI: () = ();
+pub const UC3_SPI: unicommspi::Unicommspi = unsafe {
+    unicommspi::Unicommspi::from_ptr(1080393728 as *mut _)
+};
 pub const UC3_UART: unicommuart::Unicommuart = unsafe {
     unicommuart::Unicommuart::from_ptr(1080295424 as *mut _)
 };
 pub const UC4: unicomm::Unicomm = unsafe {
     unicomm::Unicomm::from_ptr(1080500224 as *mut _)
 };
-///Address: 1080332288
-pub const UC4_I2CC: () = ();
+pub const UC4_I2CC: unicommi2cc::Unicommi2cc = unsafe {
+    unicommi2cc::Unicommi2cc::from_ptr(1080332288 as *mut _)
+};
 ///Address: 1080365056
 pub const UC4_I2CT: () = ();
-///Address: 1080397824
-pub const UC4_SPI: () = ();
+pub const UC4_SPI: unicommspi::Unicommspi = unsafe {
+    unicommspi::Unicommspi::from_ptr(1080397824 as *mut _)
+};
 pub const UC4_UART: unicommuart::Unicommuart = unsafe {
     unicommuart::Unicommuart::from_ptr(1080299520 as *mut _)
 };
 pub const UC5: unicomm::Unicomm = unsafe {
     unicomm::Unicomm::from_ptr(1080508416 as *mut _)
 };
-///Address: 1080336384
-pub const UC5_I2CC: () = ();
+pub const UC5_I2CC: unicommi2cc::Unicommi2cc = unsafe {
+    unicommi2cc::Unicommi2cc::from_ptr(1080336384 as *mut _)
+};
 ///Address: 1080369152
 pub const UC5_I2CT: () = ();
 pub const UC5_UART: unicommuart::Unicommuart = unsafe {
